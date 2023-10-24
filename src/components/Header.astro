@@ -1,0 +1,44 @@
+---
+import '../styles/global.css';
+
+import { Image } from 'astro:assets';
+import branchLeft from '../images/branch-left.png';
+import branchRight from '../images/branch-right.png';
+---
+
+<style>
+    .title-tekst{
+        display: flex;
+        
+    }
+    div{
+        margin: auto;
+        width: 200px;
+    }
+    div.names{
+        
+
+    }
+    div.and{
+        font-size: 60px;
+        width: 200px;
+    }
+    h1{
+        font-size: 45px;
+    }
+   
+</style>
+
+<header class= "Header">
+
+    <section class="title-tekst">
+        <div class="names"><h1>Einar</h1></div> 
+        <div> <Image src={branchLeft} alt="watercolor branch between names" width=" 100"/></div>  
+        <div class= "and">&</div>  
+        <div> <Image src={branchRight} alt="watercolor branch between names" width=" 100"/></div> 
+        <div class="names"><h1>Christiane</h1></div>
+    </section>
+
+    
+        <h2> 29. juni 2024 <span class= "dot"></span> Torstad gård, Asker<h2>  
+</header>

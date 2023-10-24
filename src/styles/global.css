@@ -1,0 +1,73 @@
+html {
+    background-color: #a9a9a97a;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-family: 'Josefin Sans', sans-serif;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    }
+p{
+    margin-bottom: 0.7vh;
+}
+.textblock{
+    margin: 10px;
+}
+
+.Header {
+    text-align: center;
+    padding: 15px;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-weight: 700;
+}
+
+#header-image {
+    width: 100%; /* Make the image span the full width of the parent container */
+    height: 30vh; /* Set the height to 50% of the viewport height */
+    text-align: center; /* Center align the text */
+    color: #fff; /* Text color */
+    padding: 0px; /* Add some padding for readability */
+}
+
+.image-container {
+    width: 100%; /* Make the container span the full width of the section */
+    height: 100%; /* Make the container span the full height of the section */
+    position: relative; /* Positioning context for the image */
+}
+
+.image-container img {
+    width: 100%; /* Ensure the image spans the full width */
+    height: 100%; /* Ensure the image spans the full height */
+    position: absolute;
+    top: 0; /* Adjust the top position in pixels as needed */
+    left: 0; /* Center horizontally */
+    object-fit: cover;
+    object-position: center;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #000000;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
+ul {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 0px;
+    list-style-type: none;
+}
+
+li {
+    margin: auto;
+}

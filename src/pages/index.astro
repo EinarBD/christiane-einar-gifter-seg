@@ -1,16 +1,41 @@
 ---
+import BaseLayout from '../layouts/BaseLayout.astro';
 
+
+const pageTitle = "Home page"
 ---
+<BaseLayout title = {pageTitle}>
+	<section id="header-image">
+		<div class="image-container">
+			<img  src="https://i.imgur.com/Sn4qaYp.jpg" alt="Einar og Christiane i bunad på 17.mai 2023">
+		</div>
+	</section>
+<section class="textblock">
+	<h2>Informasjon</h2>
+<p>
+	<strong>Tid og sted:</strong> Både vielsen og selskapet er på Torstad gård 29. juni 2024. Vielsen starter kl. 13:00, oppmøte senest kl. 12:50.
+</p>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<p>
+	<strong>Kleskode</strong>: Pyntet.
+</p>
+<p>
+	<strong>Hvordan komme seg dit:</strong> Det er en del parkering på gården og bilen kan stå til søndagen. Det er også mulighet for kollektivtransport.
+</p>
+<p>
+	<strong>Tog:</strong> Lokaltog til Hvalstad stasjon, 15 min gange til lokalet
+</p>
+<p>
+	<strong> Buss:</strong> Hvalstad, Buss 270, 13 min gange til lokalet
+</p>
+<p> <strong>Taler:</strong> Håvard Vedeler Nilsen er toastmaster i bryllupet. Ta kontakt med ham dersom du vil holde tale i bryllupet.
+	haavard.v.n@gmail.com
+</p>
+<p> <strong>Bilder fra festen:</strong> Vi blir veldig glade for alle bilder som tas etter vielsen og utover bryllupsfesten. Vi kommer til å opprette deling av bildene på Google Foto etter bryllupet. Under vielsen ønsker vi å unngå for mange flotte fjes gjemt bak telefoner og ber dere derfor ikke ta bilder under vielsen da vi gir denne oppgaven til noen heldige utvalgte.</p>
+<p> <strong>Nyttige telefonnummer: </strong> Einar 934 10 910, Christiane 948 83 546, Erik (Einars forlover) 965 12 835, Eline (Christianes forlover) 458 81 242</p>
+</section>
+
+</BaseLayout>
+
+
+
