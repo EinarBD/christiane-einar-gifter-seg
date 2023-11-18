@@ -1,11 +1,41 @@
 ---
 import '../styles/global.css';
 ---
+<style>
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+       
+    }
+    .circle {
+        height: 10vh;
+        width: 10vh;
+        display: table-cell;
+        text-align: center;
+        font-size: 3.5vh;
+        line-height: 1;
+        color: rgb(236, 239, 31);
+        vertical-align: middle;
+        border-radius: 50%; /* may require vendor prefixes */
+        background: #9f2b38;
+        margin-top: 30px;
+        
+        }
+</style>
 
 <nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/onskeliste/">Ønskeliste</a></li>
-        <li> <a href="/rsvp/">RSVP</a></li>
-    </ul>
+
+    <a href="/rsvp/">
+        <div class = "circle">
+        RSVP
+    </div>
+    </a>
+    <a href="/onskeliste/">
+        <div class = "circle">
+        Ønske -liste
+    </div>
+    </a>
 </nav>

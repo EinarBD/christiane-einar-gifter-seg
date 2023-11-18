@@ -1,32 +1,39 @@
 html {
-    background-color: #a9a9a97a;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    background-color: #FBF2DD;
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     margin: 0;
     padding: 0;
     line-height: 1.5;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'EB Garamond', serif;
     }
 
 * {
     margin: 0;
     padding: 0;
-    width: auto;
     }
 p{
     margin-bottom: 0.7vh;
 }
 .textblock{
     margin: 10px;
+    max-width: 400px;
+    text-align: center;
 }
 
 .Header {
-    text-align: center;
-    padding: 15px;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
-    font-weight: 700;
+    font-family: 'EB Garamond', serif;
+    font-weight: 300;
+    width: 100%; /* Make the image span the full width of the parent container */
+    height: 35vh; /* Set the height to 50% of the viewport height */
+    text-align: center; /* Center align the text */
+    color: #fff; /* Text color */
+    padding: 0px; /* Add some padding for readability */
+    display: flex;
 }
 
 #header-image {

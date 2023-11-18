@@ -1,9 +1,11 @@
 ---
 import '../styles/global.css';
+import Nav from "../components/Nav.astro";
 
 import { Image } from 'astro:assets';
 import branchLeft from '../images/branch-left.png';
 import branchRight from '../images/branch-right.png';
+import emblem from '../images/einar-og-chris-emblem.jpg';
 ---
 
 <style>
@@ -11,12 +13,35 @@ import branchRight from '../images/branch-right.png';
         display: flex;
         
     }
-    div{
-        margin: auto;
-        width: 200px;
-    }
-    div.names{
+    div.emblem{ 
+        width: 50vw; /* Make the container span the full width of the section */
+        max-width: fit-content;
+        min-width: fit-content;
+        height: 35vh; /* Make the container span the full height of the section */
+        max-height: 240px;
+        position: relative; /* Positioning context for the image */
+        background: green;
+        object-fit:  cover;
         
+  
+        
+    }
+    Image.img-emblem{
+        width: 100%; /* Ensure the image spans the full width */
+        height: 100%; /* Ensure the image spans the full height */
+        position: absolute;
+        top: 0; /* Adjust the top position in pixels as needed */
+        left: 0; /* Center horizontally */
+        
+
+    }
+    div.nav-test{
+        background: url(https://i.imgur.com/y1XdmZK.png);
+        background-size: 100%;
+        display: inline-block;
+        width: 75vw;
+        height: 35vh;
+        max-height: 240px;
 
     }
     div.and{
@@ -31,14 +56,10 @@ import branchRight from '../images/branch-right.png';
 
 <header class= "Header">
 
-    <section class="title-tekst">
-        <div class="names"><h1>Einar</h1></div> 
-        <div> <Image src={branchLeft} alt="watercolor branch between names" width=" 100"/></div>  
-        <div class= "and">&</div>  
-        <div> <Image src={branchRight} alt="watercolor branch between names" width=" 100"/></div> 
-        <div class="names"><h1>Christiane</h1></div>
-    </section>
-
-    
-        <h2> 29. juni 2024 <span class= "dot"></span> Torstad gård, Asker<h2>  
+    <div class="emblem">
+       <a href="/"> <img src= "https://i.imgur.com/hPLCUc2.jpg" class = "img-emblem" alt="Emblem with the names Einar and Christiane" width = "100%" height ="100%" /></a>
+    </div>
+    <div class="nav-test">
+        <Nav/>
+    </div>
 </header>
