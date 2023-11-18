@@ -20,9 +20,17 @@ p{
     margin-bottom: 0.7vh;
 }
 .textblock{
-    margin: 10px;
-    max-width: 400px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+   
 }
 
 .Header {
