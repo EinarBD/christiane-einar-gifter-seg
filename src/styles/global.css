@@ -22,6 +22,7 @@ p{
 .textblock{
     max-width: 500px;
     margin: 0 auto;
+    font-size: 18px;
     padding: 10px;
     position: relative;
     text-align: center;
@@ -37,7 +38,7 @@ p{
     font-family: 'EB Garamond', serif;
     font-weight: 300;
     width: 100%; /* Make the image span the full width of the parent container */
-    height: 35vh; /* Set the height to 50% of the viewport height */
+    height: 30vh; /* Set the height to 50% of the viewport height */
     text-align: center; /* Center align the text */
     color: #fff; /* Text color */
     padding: 0px; /* Add some padding for readability */
@@ -86,3 +87,11 @@ ul {
 li {
     margin: auto;
 }
+
+@media screen and (min-width: 800px) {
+    .textblock{
+        font-size: 23px;
+        max-width: 800px;
+    }
+            
+    }
