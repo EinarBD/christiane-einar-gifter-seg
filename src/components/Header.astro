@@ -1,68 +1,26 @@
 ---
-import '../styles/global.css';
 import Nav from "../components/Nav.astro";
+import '../styles/global.css';
 
-import { Image } from 'astro:assets';
-import branchLeft from '../images/branch-left.png';
-import branchRight from '../images/branch-right.png';
-import emblem from '../images/einar-og-chris-emblem.jpg';
 ---
 
-<style>
-    .title-tekst{
-        display: flex;
-        
-    }
-    div.emblem{ 
-        width: 50vw; /* Make the container span the full width of the section */
-        max-width: fit-content;
-        min-width: fit-content;
-        height: 35vh; /* Make the container span the full height of the section */
-        max-height: 30vh;
-        position: relative; /* Positioning context for the image */
-        background: green;
-        object-fit:  cover;
-        
-  
-        
-    }
-    Image.img-emblem{
-        width: 100%; /* Ensure the image spans the full width */
-        height: 100%; /* Ensure the image spans the full height */
-        position: absolute;
-        top: 0; /* Adjust the top position in pixels as needed */
-        left: 0; /* Center horizontally */
-        
-
-    }
-    div.nav-test{
+<style>   
+   .bg{
         background: url(https://i.imgur.com/y1XdmZK.png);
         background-size: cover;
         background-position: bottom left;
         background-repeat: no-repeat;
-        display: inline-block;
-        width: 100%;
-        height: 30vh;
-        max-height: 30vh;
-
     }
     
-    div.and{
-        font-size: 60px;
-        width: 200px;
-    }
-    h1{
-        font-size: 45px;
-    }
    
 </style>
 
-<header class= "Header">
+<header class="flex">
 
-    <div class="emblem">
-       <a href="/"> <img src= "https://i.imgur.com/hPLCUc2.jpg" class = "img-emblem" alt="Emblem with the names Einar and Christiane" width = "100%" height ="100%" /></a>
+    <div class="flex-shrink-0">
+       <a href="/"> <img src= "https://i.imgur.com/hPLCUc2.jpg" class="img-emblem" alt="Emblem with the names Einar and Christiane"  /></a>
     </div>
-    <div class="nav-test">
+    <div class="w-full bg">
         <Nav/>
     </div>
 </header>
