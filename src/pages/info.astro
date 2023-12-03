@@ -5,153 +5,35 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "Informasjon"
 ---
 
----
-import BaseLayout from '../layouts/BaseLayout.astro';
-
-const pageTitle = "GPTtest"
-
----
-<BaseLayout title = {pageTitle}>
-
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
+<style>
+    h2{
+        font-size: xx-large;
+        font-weight: 600;
     }
-
-    header {
-      display: flex;
-      align-items: center;
-      height: 23vh; /* 30% of the viewport height */
-      max-height: 480px; /* Adjust as needed */
-      min-height: 225px;
-      background-color: #f0f0f0; /* Adjust as needed */
-    }
-
-    #emblem {
-   
-      max-height: 100%;
-      min-height: 100%;
-      object-fit: contain;
-    }
-
-    #nav-background {
-      flex: 1;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      background: url('https://i.imgur.com/84SKNSO.png') center/cover no-repeat; /* Replace 'background-image.jpg' with your image */
-      background-size: cover; /* Cover the entire container */
-      background-position: center; /* Center the background image */
-      justify-content: flex-end;
-    }
-
-    nav {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .nav-item {
-      width: 8vh; /* Adjust as needed */
-      min-width: 73px;
-      height: 8vh;
-      min-height: 73px;
-      padding: 10px; /* Adjust as needed */
-      margin: 5px; /* Adjust as needed */
-      margin-right: 100%;
-      border-radius: 50%;
-      background-color: #333; /* Adjust as needed */
-      color: #fff; /* Adjust as needed */
-      text-align: center;
-      cursor: pointer;
-    }
-    @media (min-width: 945px) {
-        header {
-            height: 30vh;
-            max-height: 400px; 
-
-      }
-
-      #emblem {
-        height: 100%;
-
-      }
-
-      #nav-background {
-        
-      }
-      .nav-item{
-        width: 12vh; /* Adjust as needed */
-      height: 12vh;
-      }
-    }
-  </style>
-</head>
-  <header>
-    <img id="emblem" src="https://i.imgur.com/hJ30MCP.png" alt="Emblem">
-    <div id="nav-background">
-      <nav>
-        <div class="nav-item">1</div>
-        <div class="nav-item">2</div>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Your website content goes here -->
-  <div class="textblock">
-    <h2>Informasjon</h2>
-<p>
-    <strong>Tid og sted:</strong> Både vielsen og selskapet er på Torstad gård 29. juni 2024. Vielsen starter kl. 13:00, oppmøte senest kl. 12:50.
-</p>
-
-<p>
-    <strong>Hvordan komme seg dit:</strong> Det er en del parkering på gården og bilen kan stå til søndag. Det er også mulighet for kollektivtransport.
-</p>
-<p>
-    <strong>Tog:</strong> Lokaltog til Hvalstad stasjon, 15 min gange til lokalet
-</p>
-<p>
-    <strong> Buss:</strong> Hvalstad, Buss 270, 13 min gange til lokalet
-</p>
-<p> <strong>Taler:</strong> Håvard Vedeler Nilsen er toastmaster i bryllupet. Ta kontakt med ham dersom du vil holde tale i bryllupet.
-    haavard.v.n@gmail.com
-</p>
-<p> <strong>Bilder fra festen:</strong> Vi blir veldig glade for alle bilder som tas etter vielsen og utover bryllupsfesten. Vi kommer til å opprette deling av bildene på Google Foto etter bryllupet. Under vielsen ønsker vi å unngå for mange flotte fjes gjemt bak telefoner og ber dere derfor ikke ta bilder under vielsen da vi gir denne oppgaven til noen heldige utvalgte.</p>
-<p> <strong>Nyttige telefonnummer: </strong> Einar 934 10 910, Christiane 948 83 546, Erik (Einars forlover) 965 12 835, Eline (Christianes forlover) 458 81 242</p>
-</div>
-
-</html>
-
-</BaseLayout>
-
+</style>
 <BaseLayout title = {pageTitle}>
     <div class="textblock">
-        <h2>Informasjon</h2>
-    <p>
-        <strong>Tid og sted:</strong> Både vielsen og selskapet er på Torstad gård 29. juni 2024. Vielsen starter kl. 13:00, oppmøte senest kl. 12:50.
-    </p>
-    
-    <p>
-        <strong>Hvordan komme seg dit:</strong> Det er en del parkering på gården og bilen kan stå til søndag. Det er også mulighet for kollektivtransport.
-    </p>
-    <p>
-        <strong>Tog:</strong> Lokaltog til Hvalstad stasjon, 15 min gange til lokalet
-    </p>
-    <p>
-        <strong> Buss:</strong> Hvalstad, Buss 270, 13 min gange til lokalet
-    </p>
-    <p> <strong>Taler:</strong> Håvard Vedeler Nilsen er toastmaster i bryllupet. Ta kontakt med ham dersom du vil holde tale i bryllupet.
-        haavard.v.n@gmail.com
-    </p>
-    <p> <strong>Bilder fra festen:</strong> Vi blir veldig glade for alle bilder som tas etter vielsen og utover bryllupsfesten. Vi kommer til å opprette deling av bildene på Google Foto etter bryllupet. Under vielsen ønsker vi å unngå for mange flotte fjes gjemt bak telefoner og ber dere derfor ikke ta bilder under vielsen da vi gir denne oppgaven til noen heldige utvalgte.</p>
-    <p> <strong>Nyttige telefonnummer: </strong> Einar 934 10 910, Christiane 948 83 546, Erik (Einars forlover) 965 12 835, Eline (Christianes forlover) 458 81 242</p>
-    </div>
-    
+	<h2>Informasjon</h2>
+	<p>
+		<strong>Tid og sted:</strong> Både vielsen og selskapet er på Torstad gård 29. juni 2024. Vielsen starter kl. 13:00, oppmøte senest kl. 12:50.
+	</p>
+	
+	<p>
+		<strong>Hvordan komme seg dit:</strong> Det er en del parkering på gården og bilen kan stå til søndag. Det er også mulighet for kollektivtransport.
+	</p>
+	<p>
+		<strong>Tog:</strong> Lokaltog til Hvalstad stasjon, 15 min gange til lokalet
+	</p>
+	<p>
+		<strong> Buss:</strong> Hvalstad, Buss 270, 13 min gange til lokalet
+	</p>
+	<p> <strong>Taler:</strong> Håvard Vedeler Nilsen er toastmaster i bryllupet. Ta kontakt med ham dersom du vil holde tale i bryllupet.
+		haavard.v.n@gmail.com
+	</p>
+	<p> <strong>Bilder fra festen:</strong> Vi blir veldig glade for alle bilder som tas etter vielsen og utover bryllupsfesten. Vi kommer til å opprette deling av bildene på Google Foto etter bryllupet. Under vielsen ønsker vi å unngå for mange flotte fjes gjemt bak telefoner og ber dere derfor ikke ta bilder under vielsen da vi gir denne oppgaven til noen heldige utvalgte.</p>
+	<p> <strong>Nyttige telefonnummer: </strong> Einar 934 10 910, Christiane 948 83 546, Erik (Einars forlover) 965 12 835, Eline (Christianes forlover) 458 81 242</p>
+	</div>
 </BaseLayout>
+
+
+

@@ -55,10 +55,12 @@ import '../styles/global.css';
       min-height: 73px;
       padding: 10px; /* Adjust as needed */
       margin: 5px; /* Adjust as needed */
-      margin-right: 100%;
+      margin-right: 30px;
       border-radius: 50%;
       background-color: #9f2b38; /* Adjust as needed */
       color: #FDE481; /* Adjust as needed */
+      font-size: medium;
+      font-weight: 600;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -66,10 +68,14 @@ import '../styles/global.css';
       cursor: pointer;
     }
 
-    h2{
-        font-size: xx-large;
-        font-weight: 600;
-    }
+    #emblem-container {
+        max-height: 100%;
+        min-height: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+    
     @media (min-width: 945px) {
         header {
             height: 30vh;
@@ -94,11 +100,17 @@ import '../styles/global.css';
 </head>
 
   <header>
-    <img id="emblem" src="https://i.imgur.com/hJ30MCP.png" alt="Emblem">
+    <div id="emblem-container">
+        <a href="/">
+            <img id="emblem" src="https://i.imgur.com/hJ30MCP.png" alt="Emblem">
+        </a>
+    </div>
     <div id="nav-background">
       <nav>
-        <div class="nav-item">Infor -masjon</div>
-        <div class="nav-item">Ønske -liste</div>
+        
+            <div class="nav-item"> <a href="/info/">Infor- masjon </a></div>
+       
+        <div class="nav-item"><a href="/onskeliste/">Ønske -liste</a></div>
       </nav>
     </div>
   </header>
