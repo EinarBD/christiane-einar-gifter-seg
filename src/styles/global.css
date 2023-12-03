@@ -34,16 +34,7 @@ p{
    
 }
 
-.Header {
-    font-family: 'EB Garamond', serif;
-    font-weight: 300;
-    width: 100%; /* Make the image span the full width of the parent container */
-    height: 30vh; /* Set the height to 50% of the viewport height */
-    text-align: center; /* Center align the text */
-    color: #fff; /* Text color */
-    padding: 0px; /* Add some padding for readability */
-    display: flex;
-}
+
 
 #header-image {
     width: 100%; /* Make the image span the full width of the parent container */
